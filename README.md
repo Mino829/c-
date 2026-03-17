@@ -1,4 +1,4 @@
-C++ Multi-threaded Chat System
+## C++ Multi-threaded Chat System
 C++とPOSIXソケットを用いた、シンプルな複数人同時参加型のチャットシステムです。サーバーが複数のクライアント接続をスレッドで管理し、送られたメッセージを参加者全員にブロードキャストします。
 1. 機能概要マルチクライアント対応: std::thread を使用し、複数の接続を並行して処理します。リアルタイム・ブロードキャスト: 一人の発言を、接続中の全ユーザーへ即時に転送します。スレッドセーフな管理: std::mutex を用いて、クライアントリストへのアクセスを保護しています。POSIX準拠: Windows (Cygwin/MSYS2) だけでなく、LinuxやmacOSでも動作する移植性の高いコードです。
 2. 開発環境OS: Windows 11 (Cygwin環境)Compiler: g++ (GCC) 15.x 以上Language: C++11 以降Libraries: Standard Library (iostream, thread, vector, mutex), POSIX Socket API
